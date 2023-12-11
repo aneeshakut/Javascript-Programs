@@ -1,0 +1,12 @@
+//Javascript Program to add New element in DOM
+
+//Creating a new button
+let newBtn=document.createElement("button");
+newBtn.innerText="Click me!";
+
+//Style attributes
+newBtn.style.color="white";
+newBtn.style.backgroundColor="green";
+
+//Positioning new button
+document.querySelector("body").prepend(newBtn);
