@@ -1,0 +1,21 @@
+//Number Guessing Game Program in Javascript
+
+//Generating Random Number
+const answer=Math.floor(Math.random()*10+1);
+let guesses=0;
+
+//Guessing Function
+document.getElementById("submitbutton").onclick=function(){
+    let guess=document.getElementById("guessfield").value;
+    guesses+=1;
+    //For Correct Answer
+    if(guess==answer){
+        alert(`${answer} is the correct number!It took you ${guesses} guesses.`);
+    }
+    else if(guess<answer){
+        alert("Too small");
+    }
+    else if(guess>answer){
+        alert("Too big");
+    }
+}
