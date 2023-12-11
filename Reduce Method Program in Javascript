@@ -1,0 +1,21 @@
+//Reduce Method Program in Javascript
+
+//Taking user input
+let n=window.prompt("Enter a number:");
+
+//Making Array
+let arr=[];
+for(let i=1;i<=n;i++){
+    arr[i-1]=i;
+}
+
+//Displaying Array
+console.log(arr);
+
+//Reduce Method
+let sum=arr.reduce((res,curr)=>{
+    return "sum:"+(res+curr);
+})
+
+//Displaying sum
+console.log(sum);
