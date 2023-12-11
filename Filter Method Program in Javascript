@@ -1,0 +1,12 @@
+//Javascript Program to filter out students whose marks>=90
+
+//Marks of all students
+let marks=[80,90,88,72,99,54,93,82]
+
+//Filter function
+let toppers=marks.filter((val) => {
+     return val>=90;
+});
+
+//Displaying filtered values
+console.log(toppers);
