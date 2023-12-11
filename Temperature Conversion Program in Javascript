@@ -1,0 +1,34 @@
+//Temperature Conversion Program in Javascript
+
+//Conversion Functions
+document.getElementById("submitbutton").onclick=function(){
+    let temp;
+    //fahrenheit to celsius
+    if(document.getElementById("cbutton").checked){
+        temp=document.getElementById("textbox").value;
+        temp=Number(temp);
+        temp=toCelsius(temp);
+        document.getElementById("templabel").innerHTML=temp + "`C";
+    }
+    //celsius to fahrenheit
+    else if(document.getElementById("fbutton").checked){
+        temp=document.getElementById("textbox").value;
+        temp=Number(temp);
+        temp=toFahrenheit(temp);
+        document.getElementById("templabel").innerHTML=temp + "`F";
+    }
+    //If No option is selected
+    else{
+        document.getElementById("templabel").innerHTML="Select a unit";
+    }
+}
+
+//Function to convert to degree celsius
+function toCelsius(temp){
+    return (temp-32)*(5/9);
+}
+
+//Function to convert to degree fahrenheit
+function toFahrenheit(temp){
+    return temp*9/5+32;
+}
