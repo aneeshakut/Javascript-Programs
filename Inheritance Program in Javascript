@@ -1,0 +1,31 @@
+//Inheritance Program in Javascript
+
+DATA="Data"
+
+//Creating and defining a class
+class User{
+    //Constructor(Default Data)
+    constructor(name,email){
+        this.name=name;
+        this.email=email;
+    }
+    //Function in class
+    viewData(){
+        console.log("You are viewing data.")
+    }
+}
+
+//Inheritance of existing class
+class Admin extends User{
+        constructor(name,email){
+            super(name,email);
+        }
+        Edit(){
+            DATA="new value";
+        }
+    }
+
+//Creating objects belonging to the above class
+let user1=new User("Tom","Tom@gmail.com");
+let user2=new User("Bob","Bob@gmail.com");
+let admin1=new Admin("admin1","admin1@gmail.com");
