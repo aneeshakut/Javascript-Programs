@@ -1,0 +1,22 @@
+//Error Handling in Javascript
+
+//Some given data
+let a=5;
+let b=10;
+
+console.log(a);
+console.log(b);
+console.log(a+b);
+
+//Code which may contain error/s
+try{
+    console.log(a-c);
+}
+
+//Displaying the error/s(Handling the error/s)
+catch(err){
+    console.log("Error:",err);
+}
+
+console.log(a*b);
+console.log(a/b);
