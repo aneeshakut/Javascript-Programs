@@ -1,0 +1,18 @@
+//Class Program in Javascript
+
+//Craeting and defining a class
+class User{
+    //Constructor(Default Data)
+    constructor(name,email){
+        this.name=name;
+        this.email=email;
+    }
+    //Function in class
+    viewData(){
+        console.log("You are viewing data.")
+    }
+}
+
+//Creating objects belonging to the above class
+let user1=new User("Tom","Tom@gmail.com");
+let user2=new User("Bob","Bob@gmail.com");
